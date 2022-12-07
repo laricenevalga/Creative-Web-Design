@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Day 3 and 4 - Buttons & Icons </title>
+</head>
+
+<body class="purple lighten-4 black-text">
+    <div class="container">
+    <!--Header-->
+    <h1 class="purple-text text-darken-1"> Buttons in Creative Web Design</h1>
+    </div>
+
+    <!--Paragraph-->
+    <div class="container">
+    <p>There are 3 main button types described in material design. 
+    The raised button is a standard button that signify actions and seek to give depth to a mostly flat page. 
+    The floating circular action button is meant for very important functions. 
+    Flat buttons are usually used within elements that already have depth like cards or modals.
+    </div>
+    </p>
+
+    <div class="container">
+    <!--Buttons-->
+    <h4 class="grey-text text-darken-4"> Raised Button</h4>
+    <!--Raised Buttons-->
+    <a href="#!" class="waves-effect waves-red btn purple darken-1 white-text">button without icon</a>
+    <a href="#!" class="waves-effect waves-red btn purple darken-2 white-text"><i class="material-icons left">subdirectory_arrow_left</i>button with icon</a>
+    <a class="waves-effect waves-red btn purple darken-3 white-text"><i class="material-icons right">subdirectory_arrow_right</i>button with icon</a>
+    <br>
+
+    <h4 class="grey-text text-darken-4">Floating Button</h4>
+    <!--Floating Buttons-->
+    <a href="collections.html" target="blank" 
+    class="btn-floating btn-large waves-effect waves-pink purple pulse">
+    <i class="material-icons">bookmark</i></a>
+    <br>
+
+    <h4 class="grey-text text-darken-4"> Flat Button</h4>
+    <!--Flat Buttons-->
+    <a class="waves-effect waves-purple btn-flat pink-text">Flat Button</a>
+    <br>
+
+    <h4 class="grey-text text-darken-4">Submit Button</h4>
+    <!--Submit Buttons-->
+    <button class="btn waves-effect waves-purple btn white purple-text text-darken-4" type="submit" name="action">Submit Button
+    <i class="material-icons right">send</i>
+    </button>
+    <br>
+
+    <h4 class="grey-text text-darken-4">Large Buttons</h4>
+    <!--Large Buttons-->
+    <a class="waves-effect waves-red btn purple lighten-1 black-text btn-large">Large Button</a>
+    <a class="waves-effect waves-red btn purple lighten-2 black-text btn-large"><i class="material-icons left">radio_button_checked</i>large button with icon</a>
+    <a class="waves-effect waves-red btn purple lighten-3 black-text btn-large"><i class="material-icons right">remove_circle</i>large button with icon</a>
+    <br>
+
+    <h4 class="grey-text text-darken-4">Small Buttons</h4>
+    <!--Small Buttons-->
+    <a class="waves-effect waves-red btn deep purple darken-2 white-text btn-small">Small Button</a>
+    <a class="waves-effect waves-red btn deep purple darken-3 white-text btn-small"><i class="material-icons left">radio_button_unchecked</i>small button with icon</a>
+    <a class="waves-effect waves-red btn deep purple darken-4 white-text btn-small"><i class="material-icons right">remove_red_eye</i>small button with icon</a>
+    <br>
+    </div>
+
+    <div class="container">
+    <h2 class="purple-text text-darken-5"> Floating Action Button</h2>
+    <h5 class="black-text"> Demo is in the bottom righthand corner of the page. </h5>
+
+    <h4 class="purple-text text-darken-5"> Horizontal FAB</h4>
+    <h6 class="black-text">Creating a horizontal FAB is easy! Just set the direction option.</h6>
+
+    <h4 class="purple-text text-darken-5"> Click-only FAB</h4>
+    <h6 class="black-text">If you want to disable the hover behaviour, and instead toggle the FAB menu when the user clicks on the large button (works great on mobile!), just add the click-to-toggle class to the FAB.</h6>
+
+    <h4 class="purple-text text-darken-5"> FAB to Toolbar</h4>
+    <h6 class="black-text">Instead of displaying individual button options, you can transition your FAB into a toolbar on click. Just add the toolbar class to the FAB.</h6>
+    </div>
+
+<div style="height:500px;"></div>
+
+    <div class="container">
+    <!--floating action button-->
+    
+    <div class="fixed-action-btn toolbar">
+        <a class="btn-floating btn-large pink lighten-2">
+        <i class="large material-icons">menu</i>
+        </a>
+
+    <ul>
+    <li>
+        <a href="index.html" class="pink lighten-1">
+        <i class="material-icons">network_wifi</i>
+        </a>
+    </li>
+    
+    <li>
+        <a href="index.html" class="pink lighten-1">
+        <i class="material-icons">bluetooth</i>
+        </a>
+    </li>
+    
+    <li>
+        <a href="collections.html" class="pink lighten-1">
+        <i class="material-icons">volume_up</i>
+        </a>
+    </li>  
+    </ul>
+
+    </div>
+
+    <!-- Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+
+<script>
+        $(document).ready(function(){
+        $('.fixed-action-btn').floatingActionButton({
+            hoverEnabled: false,
+            toolbarEnabled:true
+        });
+        });
+</script>
+
+</body>
+</html>
