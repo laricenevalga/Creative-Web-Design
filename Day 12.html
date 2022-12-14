@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <title>Day 12 - Navbar and Cards </title>
+</head>
+
+    <!--Nav bar-->
+<body class="orange lighten-3">
+    <nav class="brown darken-1">
+    <div class="container">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Coffee-han</a>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"> 
+            <i class="material-icons">menu</i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+        <li> <a href="index.html">HOME</a></li>
+        <li> <a href="index.html">ABOUT</a></li>
+        <li> <a href="index.html">MENU</a></li>
+
+        </ul>
+    </div>
+    </div>
+    </nav>
+    
+    <ul id="slide-out" class="sidenav">
+        <li> <a href="index.html">HOME</a></li>
+        <li> <a href="index.html">ABOUT</a></li>
+        <li> <a href="index.html">MENU</a></li>
+    </ul>
+
+    <!--Cards-->
+<div class="container">
+<div class="row">
+    <div class="col s12 m4">
+    <div class="card brown lighten-3">
+    <div class="card-content brown-text text-darken-4">
+        <span class="card-title">Card Title</span>
+        <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+    </div>
+    <div class="card-action">
+        <a href="" class="orange-text text-darken-4">Add to wishlist</a>
+    </div>
+    </div>
+    </div>
+
+    <!--Card Image-->
+    <div class="col s12 m4">
+    <div class="card">
+    <div class="card brown lighten-3">
+    <div class="card-image">
+        <img src="Images/c1.jpg" alt="">
+        <span class="card-title"> Best Seller Coffee</span>
+    </div>
+    <div class="card-content">
+        <p>I am a very simple card. I am good at containing small bits of information.</p>
+    </div>
+    <div class="card-action">
+        <a href="" class="orange-text text-darken-4">Add to wishlist</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col s12 m4">
+        <div class="card">
+        <div class="card brown lighten-3">
+        <div class="card-image">
+            <img src="Images/c2.jpg" alt="">
+            <span class="card-title white-text"> Best Seller Coffee</span>
+            <a href="" class="btn-floating halfway-fab waves-effect waves-light brown">
+            <i class="material-icons">star</i>
+            </a>
+        </div>
+        <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.</p>
+        </div>
+        <div class="card-action">
+            <a href="" class="orange-text text-darken-4">Add to wishlist</a>
+        </div>
+        </div>
+        </div>
+</div>
+</div>
+
+    <!--Horizontal Card-->
+    <div class="col s12 m6">
+    <div class="card horizontal brown darken-2">
+    <div class="card-image">
+        <img src="Images/c3.jpg">
+    </div>
+    <div class="card-stacked">
+    <div class="card-content">
+        <p class="white-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+    </div>
+    <div class="card-action">
+        <a href="">View my Wishlists</a>
+    </div>
+    </div>
+    </div>
+    </div>                
+
+    <!-- Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function(){
+        $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+</html>
